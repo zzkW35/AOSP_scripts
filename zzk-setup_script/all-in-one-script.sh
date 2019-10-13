@@ -62,6 +62,7 @@ yay -S authy --noconfirm
 #Install and setup my custom rEFInd
 cd Downloads
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/zzkW35/refind-theme-regular/zzk-edit/install.sh)"
+
 cd
 
 #Install custom libinput-gestures
@@ -70,7 +71,18 @@ sudo pacman -S xdotool wmctrl
 cd Downloads
 git clone https://github.com/zzkW35/libinput-gestures.git
 cd libinput-gestures
-sudo make install (or sudo ./libinput-gestures-setup install)
+sudo make install
+libinput-gestures-setup autostart
+cd ..
+
+#Promp the user to empty Download folder
+read -p "Everything got downloaded. Should I clean Downloads folder? " -r
+if [[ $REPLY =~ [Yy] ]]
+then
+    rm -rf *
+fi
+echo "Sure" 
+
 cd
 
 #Still lacks 2nd keyboard layout
@@ -81,4 +93,4 @@ if [[ $REPLY =~ [Yy] ]]
 then
     reboot
 fi
-echo "K, your choice" 
+echo "K, your choice"
