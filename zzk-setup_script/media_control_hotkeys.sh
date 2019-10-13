@@ -1,7 +1,8 @@
 #!bin/bash
 
-# This script copy-pastes the following configuration of F4, F5, F6 keys into ~/.config/khotkeysrc
-# which is a file where KDE stores custom shortcuts
+#This script copy-pastes the following configuration of F4, F5, F6 keys 
+#into ~/.config/khotkeysrc, which is a file where KDE stores custom shortcuts
+#it deinitely needs to be worked around. There are alternatives to this way.
 
 echo "[Data]
 DataCount=1
