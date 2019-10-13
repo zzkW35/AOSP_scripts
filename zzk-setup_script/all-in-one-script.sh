@@ -47,6 +47,9 @@ yay -S google-chrome-beta --noconfirm
 #Telegram Desktop
 sudo pacman -S telegram-desktop --noconfirm
 
+#Uninstall Steam
+sudo pacman -Rsc steam-manjaro --noconfirm
+
 #Visual Studio Code
 yay -S visual-studio-code-bin --noconfirm
 
