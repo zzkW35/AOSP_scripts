@@ -59,6 +59,8 @@ git config --global user.email "zzkw35@gmail.com"
 export GIT_EDITOR=vim 
 yay -S github-desktop-bin --noconfirm
 
+#Still have to add PIA
+
 #Authy
 yay -S authy --noconfirm
 
